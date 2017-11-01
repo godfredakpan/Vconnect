@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vconnect Test|Godfred</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    <style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            padding: 0px;
+            margin: 0px;
+        
+       
+               
+        }
+        #logo {
+    
+            height: 70px;
+            width: 70px;
+            margin-right: 15px;
+            margin-left: 50px;
+        }
+        .navbar {
+            margin: 0px;
+            padding-top: 0px !important;
+            padding: 0px;
+            background: #f97502;
+            width: 100%;
+            border-radius: 0px;
+            border: none;
+            color: white;
+        }      
+        
+        .navbar-brand,
+        .navbar-nav a {
+            color: white !important;
+            font-size: 17px;
+            margin-right: 15px;
+        }
+        .navbar-brand {
+            margin-top: -13px;
+            font-size: 19px;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+        }
+        .navbar-nav {
+            margin-right: 20px;
+        
+        
+            
+        }
+        
+        #header-content {
+            color: white;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+        }
+        #main-text {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        #sub-text {
+           font-size: 18px;      
+ 			}
+ 		
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  }
+
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #f97502;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #f97502;
+    border-color: #f97502;
+    outline: none;
+    margin: 20px auto;
+}
+
+
+        .btn.btn-lg:hover {
+            color:white;
+            background-color: #ba6a09;
+        }
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(http://hdlatestwallpaper.com/wp-content/uploads/2017/05/Orange-Arts-HD-Wallpaper.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/2b/45/a5/2b45a53e215a4dea4c4fa336b3bf2dad.png);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(http://static.hdw.eweb4.com/media/wallpapers_1920x1080/abstract/1/1/grunge-orange-stripes-abstract-hd-wallpaper-1920x1080-6355.png);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 2em; }    
+}
+
+
+
+input[type=text] {
+    width: 300px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+#tfnewsearch{
+		float:;
+		padding:20px;
+		background-color: #f97502;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #f97502; border-right:0px;
+		border-top-left-radius: 8px 8px;
+		border-bottom-left-radius: 8px 8px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 8px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:12px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #f97502; border-right:0px;
+		background: #f97502;
+		background: #999;
+		background: -moz-linear-gradient(top,  #999,  #999);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #f97502;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+
+}
+ 
+        
+    </style>
+</head>
+<body>
+<!-- HEADER BEGINS -->
+<div id="header">
+    <p id="background-text"></p>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img id="logo" src="vconnect-logo-desktop.png" alt="" style="display: inline;"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li> </li>
+                    <li ><a href="#">Home</a></li>
+                    <li ><a href="#">Features</a></li>
+                    <li ><a href="#">Deals</a></li>
+                    <li ><a href="#">About<span class="sr-only">(current)</span></a></li>
+
+                    
+                          </li>
+                  </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+</nav>
+<body>
+
+<center>
+<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" placeholder="What are you looking for..." class="tftextinput" name="q" size="30" maxlength="1000"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="2000" id="bs-carousel">
+  <!-- Overlay -->
+  
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Welcome to VConnect</h1>        
+            <h3>The only productivity tip you need to 
+            turn your life around</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Welcome to VConnect</h1>        
+            <h3>feel free! find anything buy anything sell anything</h3>
+        </hgroup>       
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>Welcome to VConnect</h1>        
+            <h3>Get something for everyone</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+      </div>
+    </div>
+  </div> 
+</div></center><hr>
+<bg color="black"><center><h4><b>DEALS OF THE DAY</b></h4></center><hr>
+<center>
+<div class="col-md-4">
+    <div class="Panel with panel-default class">
+      <div class="panel-heading">
+        <h2> <img src="https://vcdeal1.imgix.net/Sharper-Image-Portable-Dc-Auto-Air-Compressor-150PSI-635912166937502244.jpg?auto=format,compress&cs=tinysrgb" width="320" height="230" alt=""> </h2>
+      </div><br>
+      Portable Dc Auto Air Pump<br>
+      &#8358 7100
+      <div class="panel-body text-center">
+        <button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#Purchase">Purchase</button>
+      </div>
+    </div>
+
+  </div>
+</div><center>
+<div class="col-md-4">
+    <div class="Panel with panel-default class">
+      <div class="panel-heading">
+        <h2> <img src="https://vcdeal1.imgix.net/Pots-Picasso-6357397400483155530.jpg?auto=format,compress&cs=tinysrgb" width="320" height="230" alt=""> </h2>
+      </div>
+      <div class="panel-body text-center">
+	     8 Pieces Picasso Cooker<p>
+	     &#8358 4,600 <br>
+      <br>
+        <button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#Purchase">Purchase</button>
+      </div>
+    </div>
+
+  </div>
+</div><center>
+<div class="col-md-4">
+    <div class="Panel with panel-default class">
+      <div class="panel-heading">
+        <h2><img src="https://vcdeal1.imgix.net/CookwareSetssumo6357696797823074790.jpeg?auto=format,compress&cs=tinysrgb" width="320" height="230" alt=""></h2>
+      </div>
+      <div class="panel-body text-center">
+      Sumo premiere Cooker <p>
+      &#8358 3,050 <br><br>
+        <button type="button" class="btn btn-hero btn-lg" data-toggle="modal" data-target="#Purchase">Purchase</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<hr>
+<img src="https://vcdeal1.imgix.net/store_detailpage_banner/store_vconnect-11585667411.jpg?auto=format,compress&cs=tinysrg" width="100%" alt="">
+<div id="footer">
+    
+    <p id="line"> </p>
+    <div id="lower-footer">
+        <p>&#169; 2017 V-Connect Test All rights reserved</p>
+    </div>
+</div> 
+</body>
+</html>
